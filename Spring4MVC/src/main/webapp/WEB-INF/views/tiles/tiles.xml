@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-definition"
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+  
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+ 
+   <!-- Registration Page -->
+   <definition name="registration" extends="base-definition">  
+       <put-attribute name="title" value="Registration" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/registration.jsp" />  
+   </definition>  
+       
+   <!-- Login Page -->
+   <definition name="login" extends="base-definition">  
+       <put-attribute name="title" value="Login" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />  
+   </definition>  
+   
+   <!-- welcome -->
+   <definition name="welcome" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/welcome.jsp" />  
+   </definition>  
+   
+   <!-- My books -->
+   <definition name="mybooks" extends="base-definition">  
+       <put-attribute name="title" value="Mybooks" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/mybooks.jsp" />  
+   </definition>  
+  
+  <!-- Add books -->  
+   <definition name="addbooks" extends="base-definition">  
+       <put-attribute name="title" value="Addbooks" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/addbooks.jsp" />  
+   </definition>  
+   
+   <!-- Edit books -->  
+   <definition name="editbook" extends="base-definition">  
+       <put-attribute name="title" value="Editbook" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/editbook.jsp" />  
+   </definition>  
+
+   <!-- All books -->  
+   <definition name="allbooks" extends="base-definition">  
+       <put-attribute name="title" value="Allbooks" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/allbooks.jsp" />  
+   </definition>  
+   
+     <!-- book Results -->  
+   <definition name="bookresults" extends="base-definition">  
+       <put-attribute name="title" value="Bookresults" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookresults.jsp" />  
+   </definition>  
+</tiles-definitions>
